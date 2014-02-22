@@ -13,7 +13,7 @@
 FROM ubuntu:12.04
 MAINTAINER Joan Marc Carbo Arnau <jmcarbo@gmail.com>
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://mirrors.sohu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -q -y language-pack-en
 RUN update-locale LANG=en_US.UTF-8
